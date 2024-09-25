@@ -24,11 +24,11 @@ class Program
             pointsArray[i] = new Point(x, y);
         }
 
-        // Ініціалізуймо найвищу та найправішу точки
+        // Ініціалізуймо найвищу та найправішу точку
         Point highest = pointsArray[0];
         Point rightmost = pointsArray[0];
 
-        // Переглядаємо масив, щоб знайти найвищу та найправішу точки
+        // Переглядаємо масив, щоб знайти найвищу та найправішу точку
         for (int i = 1; i < pointsArray.Length; i++)
         {
             // Якщо поточний Y більший за найвищий Y, тоді оновлюємо змінну на поточний Y
@@ -51,7 +51,7 @@ class Program
             Console.WriteLine("(" + pointsArray[i].X + ", " + pointsArray[i].Y + ")");
         }
 
-        // Виводимо найвищу та найправішу точки
+        // Виводимо найвищу та найправішу точку
         Console.WriteLine($"\nНайвища точка: ({highest.X}, {highest.Y})");
         Console.WriteLine($"Найправіша точка: ({rightmost.X}, {rightmost.Y})");
     }
